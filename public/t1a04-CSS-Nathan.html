@@ -1,4 +1,4 @@
-<h3>Version 0.0.1</h3>
+<h3>Version 0.0.2</h3>
 <h1 align=center> CSS Webpage </h1>
 
 Reference Link
@@ -22,3 +22,64 @@ I do CSS inside the tag. It overpowers all other methods<br>
     document.getElementById('myB1').style.color = 'red'
     document.getElementById('myB1').style.backgroundColor = 'yellow'
 }">
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#main {
+  width: 70px;
+  height: 300px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+#main div {
+  width: 70px;
+  height: 70px;
+}
+</style>
+</head>
+<body>
+
+<h1>The align-content Property</h1>
+
+<div id="main">
+  <div style="background-color:coral;"></div>
+  <div style="background-color:lightblue;"></div>
+  <div style="background-color:pink;"></div>
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#main {
+  width: 220px;
+  height: 300px;
+  border: 1px solid black; 
+  display: flex;
+  align-items: center;
+}
+
+#main div {
+   flex: 1;
+}
+</style>
+</head>
+<body>
+
+<div id="main">
+  <div style="background-color:coral;">RED</div>
+  <div style="background-color:lightblue;">BLUE</div>  
+  <div style="background-color:lightgreen;">Green div with more content.</div>
+</div>
+
+</body>
+</html>
+
