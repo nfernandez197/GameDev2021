@@ -1,4 +1,4 @@
-<h5><font color="CornflowerBlue">0.0.1</h5>
+<h5><font color="CornflowerBlue">0.0.2</h5>
 <h1><center><font color="DarkOrchid">Basic Webpage</center></h1>
  
  <input type=button value="0. Pseudo Code" onclick="{ 
@@ -18,13 +18,16 @@
  <input type=button value="3. Loops" onclick="{
                                               
                                               
- let myTemp= '';
-for(let i=0; i<30; i++)
-myTemp += 'Loop Number: ' + i + '<br>';
+ const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
 
- document.getElementById('myDiv01').innerHTML = mytemp
+let text = "";
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+
+ document.getElementById('myDiv01').innerHTML = text;
                                               
- }"><br><br>
+ }">
  
  
 <input type=button value="4. Decisions" onclick="{
