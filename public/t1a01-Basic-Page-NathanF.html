@@ -54,6 +54,22 @@ const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
  document.getElementById('myDiv01').innerHTML = person.firstName + " is " + person.age + " years old.";                                                                       
  }">
  
+     <input type=button value="9. Classes" onclick="{
+  class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+
+  }
+  age() {
+    let date = new Date();
+    return date.getFullYear() - this.year;
+  }
+}
+
+let myCar = new Car("Ford", 2014);                                          
+ document.getElementById('myDiv01').innerHTML = "My car is " + myCar.age() + " years old.";
+ }">
  
  <div id="myDiv01">...</div>
    
