@@ -1,4 +1,4 @@
-<h5><font color="CornflowerBlue">0.0.5</h5>
+<h5><font color="CornflowerBlue">0.0.6</h5>
 <h1><center><font color="DarkOrchid">Basic Webpage</center></h1>
  
  <input type=button value="0. Pseudo Code" onclick="{ 
@@ -24,20 +24,19 @@ console.log(sum)
  
  
 <input type=button value="4. Decisions" onclick="{
-let hour                                                 
-if (hour < 18) 
-   greeting = /'Good day/';
-   document.getElementtById('myDiv01').innerHTML = hour;
-                                          
+if (new Date().getHours() < 18) 
+   document.getElementtById('myDiv01').innerHTML = "Good day!";                                        
 '}">
  
   <input type=button value="5. Functions" onclick="{
- document.getElementById('myDiv01').innerHTML =  myAdvancedFun(3,2)
+   function myFunction(p1, p2) 
+  return p1 * p2;
+                                                   
+ document.getElementById('myDiv01').innerHTML = myFunction(4, 3);
  }">
  
-   <input type=button value="6. Events" onclick="{
-    function displayDate()                                             
- document.getElementById('myDiv01').innerHTML = Date();
+   <input type=button value="6. Events" onclick="{                                         
+ document.getElementById('myDiv01').innerHTML=Date()">
  }">                                                
  
     <input type=button value="7. Arrays" onclick="{
@@ -48,24 +47,22 @@ if (hour < 18)
  
    <input type=button value="8. objects" onclick="{
   // Create an object:
-const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+const person = firstName:"John", lastName:"Doe", age:50, eyeColor:"blue";
 
 // Display some data from the object:                                                
  document.getElementById('myDiv01').innerHTML = person.firstName + " is " + person.age + " years old.";                                                                       
  }">
  
      <input type=button value="9. Classes" onclick="{
-  class Car {
-  constructor(name, year) {
+  class Car 
+  constructor(name, year) 
     this.name = name;
     this.year = year;
 
-  }
-  age() {
+  
+  age() 
     let date = new Date();
     return date.getFullYear() - this.year;
-  }
-}
 
 let myCar = new Car("Ford", 2014);                                          
  document.getElementById('myDiv01').innerHTML = "My car is " + myCar.age() + " years old.";
