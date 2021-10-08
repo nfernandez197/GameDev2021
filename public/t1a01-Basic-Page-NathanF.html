@@ -1,4 +1,4 @@
-<h5><font color="CornflowerBlue">0.0.7</h5>
+<h5><font color="CornflowerBlue">0.0.8</h5>
 <h1><center><font color="DarkOrchid">Basic Webpage</center></h1>
  
  <input type=button value="0. Pseudo Code" onclick="{ 
@@ -25,7 +25,7 @@ console.log(sum)
  
 <input type=button value="4. Decisions" onclick="{
 if (new Date().getHours() < 18) 
-   document.getElementtById('myDiv01').innerHTML = 'Good day!';                                        
+   document.getElementtById('myDiv01').innerHTML = Good day!;                                        
 '}">
  
   <input type=button value="5. Functions" onclick="{
@@ -43,11 +43,15 @@ if (new Date().getHours() < 18)
  
  
    <input type=button value="8. objects" onclick="{
-  // Create an object:
-const person = firstName:'John', lastName:'Doe', age:50, eyeColor:'blue';
-
-// Display some data from the object:                                                
- document.getElementById('myDiv01').innerHTML = person.firstName + ' is ' + person.age + ' years old.';                                                                       
+ // Create an object:
+const person = 
+  firstName: John,
+  lastName: Doe,
+  age: 50,
+  eyeColor: blue;
+                                          
+ // Display some data from the object:
+document.getElementById('myDiv01').innerHTML = person.firstName +  is  + person.age +  years old.;
  }">
  
      <input type=button value="9. Classes" onclick="{
@@ -56,13 +60,12 @@ const person = firstName:'John', lastName:'Doe', age:50, eyeColor:'blue';
     this.name = name;
     this.year = year;
 
-  
   age() 
     let date = new Date();
     return date.getFullYear() - this.year;
 
-let myCar = new Car('Ford', 2014);                                          
- document.getElementById('myDiv01').innerHTML = 'My car is ' + myCar.age() + ' years old.';
+let myCar = new Car(Ford, 2014);                                          
+ document.getElementById('myDiv01').innerHTML = my car is  + myCar.age() +  years old.;
  }">
  
  <div id="myDiv01">...</div>
