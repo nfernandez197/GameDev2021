@@ -25,20 +25,19 @@ console.log(sum)
  
 <input type=button value="4. Decisions" onclick="{
 if (new Date().getHours() < 18) 
-   document.getElementtById('myDiv01').innerHTML = "Good day!";                                        
+   document.getElementtById("myDiv01").innerHTML = "Good day!";                                        
 '}">
  
   <input type=button value="5. Functions" onclick="{
-   function myFunction(p1, p2) 
-  return p1 * p2;
-                                                   
- document.getElementById('myDiv01').innerHTML = myFunction(4, 3);
+ var x = myFunction(4, 3);                                                 
+ document.getElementById('myDiv01').innerHTML = x;
+   function myFunction(a, b) 
+  return a * b;                                                
  }">
  
-   <input type=button value="6. Events" onclick="{ 
-    function displayDate()                                             
- document.getElementById("myDiv01").innerHTML = Date();
- }">                                                
+ <button onclick="document.getElementById('myDiv01').innerHTML=Date()">6.Events</button>
+<p id="myDiv01"></p>
+                                       
  
     <input type=button value="7. Arrays" onclick="{
    const cars = ["Saab", "Volvo", "BMW"];                                               
