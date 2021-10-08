@@ -1,6 +1,81 @@
 <h3>Version 0.0.3</h3>
 <h1 align=center> CSS Webpage </h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Webpage By Nathan</title>
+<style>
+  h1 {
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+  body {
+  background-color: linen;
+}
 
+h1 {
+  color: DodgerBlue;
+  margin-left: 40px;
+} 
+  p {outline-color:red;}
+
+p.dotted {outline-style: dotted;}
+p.dashed {outline-style: dashed;}
+p.solid {outline-style: solid;}
+p.double {outline-style: double;}
+p.groove {outline-style: groove;}
+p.ridge {outline-style: ridge;}
+p.inset {outline-style: inset;}
+p.outset {outline-style: outset;}
+p {
+  border: 2px solid powderblue;
+}
+  div {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+  .p1 {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.p2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p3 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+  div {
+  width: 350px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+  a.one:link {color:#ff0000;}
+a.one:visited {color:#0000ff;}
+a.one:hover {color:#ffcc00;}
+
+a.two:link {color:#ff0000;}
+a.two:visited {color:#0000ff;}
+a.two:hover {font-size:150%;}
+
+a.three:link {color:#ff0000;}
+a.three:visited {color:#0000ff;}
+a.three:hover {background:#66ff66;}
+
+a.four:link {color:#ff0000;}
+a.four:visited {color:#0000ff;}
+a.four:hover {font-family:monospace;}
+
+a.five:link {color:#ff0000;text-decoration:none;}
+a.five:visited {color:#0000ff;text-decoration:none;}
+a.five:hover {text-decoration:underline;}
+</style>
+</head>
+<body>
+    
 Reference Link
 <a href="https://www.w3schools.com/cssref/default.asp">w3schools</a><br>
 
@@ -23,98 +98,55 @@ I do CSS inside the tag. It overpowers all other methods<br>
     document.getElementById('myB1').style.backgroundColor = 'yellow'
 }">
 
-<!DOCTYPE html>
-<html>
-<head>
-<style> 
-#main {
-  width: 70px;
-  height: 300px;
-  border: 1px solid #c3c3c3;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
+<B><font color="MediumSpringGreen">This is not that cool</b><br>
+
+<b style="color:Aquamarine; background:Tomatoe"> this is cool </b><br><br>
+
+  <p><font color="MediumSpringGreen">this is a text space with a border</p>
+  
+  <span><font color="MediumSpringGreen">this is a span doing nothing</span><br>
+  
+  <span style="position:absolute; right: 150px;
+  top:600; border-color:red; border-style:groove; border-width:8;
+               width:60;" }" >this is span does something </span><br><br><br><br><br><br><br><br>
+                            
+                            <h2>Demonstrating the Box Model</h2>
+ <div><font color="MediumSpringGreen">This text is the content of the box and wraps around every HTML element. It consists of: borders, padding, margins, and the actual content.</div>
+                            
+                            <h2><font color="DeepSkyBlue">CSS font-family</h2>
+<p class="p1"><font color="MediumSpringGreen">This is a paragraph, shown in the Times New Roman font.</p>
+<p class="p2"><font color="MediumSpringGreen">This is a paragraph, shown in the Arial font.</p>
+<p class="p3"><font color="MediumSpringGreen">This is a paragraph, shown in the Lucida Console font.</p>
+   
+<img src="flower.jfif" width="375" height="275" alt="flower">
+<div><font color="DeepSkyBlue">The picture above is 375px wide. The total width of this element is also 375px.</div>
+                                                            
+ <p><font color="MediumSpringGreen">Mouse over the links and watch them change layout:</p>
+<p><b><a class="one" href="https://www.w3schools.com/html/html_css.asp" target="_blank">This link changes color</a></b></p>
+<p><b><a class="two" href="https://www.w3schools.com/html/html_colors.asp" target="_blank">This link changes font-size</a></b></p>
+<p><b><a class="three" href="https://www.w3schools.com/html/html_tables.asp" target="_blank">This link changes background-color</a></b></p>
+<p><b><a class="four" href="https://www.w3schools.com/css/css3_shadows.asp" target="_blank">This link changes font-family</a></b></p>
+<p><b><a class="five" href="https://www.w3schools.com/css/css3_border_images.asp" target="_blank">This link changes text-decoration</a></b></p>
+                                                                                                 
+<h2>The outline-style Property</h2>
+
+<p class="dotted"><font color="MediumSpringGreen">A dotted outline</p>
+<p class="dashed"><font color="MediumSpringGreen">A dashed outline</p>
+<p class="solid"><font color="MediumSpringGreen">A solid outline</p>
+<p class="double"><font color="MediumSpringGreen">A double outline</p>
+<p class="groove"><font color="MediumSpringGreen">A groove outline. The effect depends on the outline-color value.</p>
+<p class="ridge"><font color="MediumSpringGreen">A ridge outline. The effect depends on the outline-color value.</p>
+<p class="inset"><font color="MediumSpringGreen">An inset outline. The effect depends on the outline-color value.</p>
+<p class="outset"><font color="MediumSpringGreen">An outset outline. The effect depends on the outline-color value.</p>
+
+<button type="button" onclick="myFunction()">Set Background Color</button>
+
+<script>
+function myFunction() {
+  document.body.style.backgroundColor = "BlueViolet";
 }
-
-#main div {
-  width: 70px;
-  height: 70px;
-}
-</style>
-</head>
-<body>
-
-<h1>The align-content Property</h1>
-
-<div id="main">
-  <div style="background-color:coral;"></div>
-  <div style="background-color:lightblue;"></div>
-  <div style="background-color:pink;"></div>
-</div>
-
+</script>
+                                                 
 </body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
-<style> 
-#main {
-  width: 220px;
-  height: 300px;
-  border: 1px solid black; 
-  display: flex;
-  align-items: center;
-}
-
-#main div {
-   flex: 1;
-}
-</style>
-</head>
-<body>
-
-<div id="main">
-  <div style="background-color:coral;">RED</div>
-  <div style="background-color:lightblue;">BLUE</div>  
-  <div style="background-color:lightgreen;">Green div with more content.</div>
-</div>
-
-</body>
-</html>
-
-<!DOCTYPE html>
-<html>
-<head>
-<style> 
-#main {
-  width: 220px;
-  height: 300px;
-  border: 1px solid black;
-  display: flex;
-  align-items: flex-start;
-}
-
-#main div {
-  flex: 1;
-}
-
-#myBlueDiv {
-  align-self: center;
-}
-</style>
-</head>
-<body>
-
-<div id="main">
-  <div style="background-color:coral;">RED</div>
-  <div style="background-color:lightblue;" id="myBlueDiv">BLUE</div>  
-  <div style="background-color:lightgreen;">Green div with more content.</div>
-</div>
-
-<p><b>Note:</b> The align-self property overrides the container's align-items property.</p>
-    
-</body>
-</html>
-
+</html>                                             
 
