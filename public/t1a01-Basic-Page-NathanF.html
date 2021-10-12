@@ -25,11 +25,11 @@ console.log(sum)
  
 <input type=button value="4. Decisions" onclick="{
 if (new Date().getHours() < 18) 
-   document.getElementtById('myDiv01').innerHTML = Good day!;                                        
+   document.getElementtById('myDiv01').innerHTML = Good day;                                        
 '}">
  
   <input type=button value="5. Functions" onclick="{
- var x = myFunction(4, 3);                                                 
+ var x = myFunction(4, 3)                                                
  document.getElementById('myDiv01').innerHTML = x;                                                
  }">
  
@@ -44,21 +44,21 @@ if (new Date().getHours() < 18)
  
    <input type=button value="8. objects" onclick="{
 // Create and display a variable:                                                 
-let person = "John Doe";                                        
+let person = John Doe                                        
 document.getElementById('myDiv01').innerHTML = person;
  }">
  
      <input type=button value="9. Classes" onclick="{
   class Car 
   constructor(name, year) 
-    this.name = name;
-    this.year = year;
+    this.name = name
+    this.year = year
 
   age() 
-    let date = new Date();
-    return date.getFullYear() - this.year;
+    let date = new Date()
+    return date.getFullYear() - this.year
 
-let myCar = new Car(Ford, 2014);                                          
+let myCar = new Car(Ford, 2014)                                          
  document.getElementById('myDiv01').innerHTML = my car is  + myCar.age() +  years old;
  }">
  
