@@ -22,21 +22,9 @@ console.log(sum)
  document.getElementById('myDiv01').innerHTML = sum;                                            
  }">
  
-<p id="myDiv01></p>
-<script>
-class Car {
-  constructor(name, year) {
-    this.name = name;
-    this.year = year;
-  }
-}
-
-const myCar = new Car("Ford", 2014);
-<input type=button value="4. Decisions" onclick="{
-document.getElementById("myDiv01").innerHTML =
-myCar.name + " " + myCar.year;
-</script>
-                                              
+<input type=button value="4.Decisions" onclick="{
+if (new Date().getHours() < 18)
+document.getElementById('myDiv01').innerHTML = "Good day!";                                 
 }">
  
   <input type=button value="5. Functions" onclick="{
