@@ -22,11 +22,21 @@ console.log(sum)
  document.getElementById('myDiv01').innerHTML = sum;                                            
  }">
  
-<input type=button value="4. Decisions" onclick="{
- let myIn01 = parseFloat(document.getElementById('myDiv01').value)
- if (myIn01 >= 3){
-     document.getElementById('myDiv01').innerHTML = myIn01 + ' is greater than 3'
-     }                                                 
+<input type=button value="3. Loops" onclick="{
+<p id="myDiv01></p>
+<script>
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+}
+
+const myCar = new Car("Ford", 2014);
+document.getElementById("myDiv01").innerHTML =
+myCar.name + " " + myCar.year;
+</script>
+                                              
 }">
  
   <input type=button value="5. Functions" onclick="{
@@ -44,18 +54,15 @@ const x = (x, y) => x * y;
  
  
    <input type=button value="8. objects" onclick="{                                               
-// Create and display a variable:
 let car = Volvo                                      
 document.getElementById('myDiv01').innerHTML = car;
  }">
  
      <input type=button value="9. Classes" onclick="{
-  class Car {
-  constructor(name, year) {
+  class Car 
+  constructor(name, year) 
     this.name = name;
     this.year = year;
-  }
-}
 
 const myCar = new Car(Ford, 2014);                                       
  document.getElementById('myDiv01').innerHTML =
