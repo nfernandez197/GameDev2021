@@ -24,8 +24,15 @@ console.log(sum)
  
  
 <input type=button value="4. Decisions" onclick="{
-if (new Date().getHours() < 18) 
-   document.getElementtById('myDiv01').innerHTML = Good day;                                        
+   document.getElementtById('myDiv01').innerHTML = `
+  Decisions use the if statement to make true 
+  false variable decisions<br>
+<pre>
+if (hour < 18) {
+  greeting = \'Good day\';
+}
+                                                 </pre>
+  
 '}">
  
   <input type=button value="5. Functions" onclick="{
@@ -42,8 +49,7 @@ if (new Date().getHours() < 18)
  }">
  
  
-   <input type=button value="8. objects" onclick="{
-// Create and display a variable:                                                 
+   <input type=button value="8. objects" onclick="{                                               
 let person = John Doe                                        
 document.getElementById('myDiv01').innerHTML = person;
  }">
@@ -59,7 +65,7 @@ document.getElementById('myDiv01').innerHTML = person;
     return date.getFullYear() - this.year
 
 let myCar = new Car(Ford, 2014)                                          
- document.getElementById('myDiv01').innerHTML = my car is  + myCar.age() +  years old;
+ document.getElementById('myDiv01').innerHTML = my car is  + myCar.age +  years old;
  }">
  
  <div id="myDiv01">...</div>
