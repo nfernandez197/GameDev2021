@@ -23,17 +23,14 @@ console.log(sum)
  }">
  
  
+<input id="myNum01" type=number value"4" ><br>
+ 
 <input type=button value="4. Decisions" onclick="{
-   document.getElementById('myDiv01').innerHTML = `
-  Decisions use the if statement to make true 
-  false variable decisions<br>
-<pre>
-if (hour < 18) {
-  greeting = \'Good day\';
-} 
-</pre>
-  
-'}">
+ let myIn01 = parseFloat(document.getElementById('myDiv01').value)
+ if (myIn01 >= 3){
+     document.getElementById('myDiv01').innerHTML = myIn01 + ' is greater than 3'
+     }                                                 
+}">
  
   <input type=button value="5. Functions" onclick="{
 const x = (x, y) => x * y;                                             
