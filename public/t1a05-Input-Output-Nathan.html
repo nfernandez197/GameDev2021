@@ -1,4 +1,4 @@
-<h2>Version 0.0.4</h2>
+<h2>Version 0.0.5</h2>
 <h2 align=center>Input & Output by Nathan</h2>
 
 <a href="https://www.w3schools.com/jsref/prop_html_innerhtml.asp">Good reference to input put Javascript innerHTML</a>
@@ -36,6 +36,28 @@ squared = ' + myIn01*myIn01
 function myFunction() {
   var x = document.getElementById("demo");
   x.style.color = "red";
+}
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="myP">I am a paragraph.</p>
+
+<p>Click the button get the HTML content of the p element.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myP").innerHTML;
+  document.getElementById("demo").innerHTML = x;
 }
 </script>
 
