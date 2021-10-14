@@ -49,20 +49,33 @@ const x = (x, y) => x * y;
  
  
    <input type=button value="8. objects" onclick="{                                               
-let car = Volvo                                      
-document.getElementById('myDiv01').innerHTML = car;
+// Create an object:
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+
+// Display some data from the object:                                    
+document.getElementById('myDiv01').innerHTML = 
+person.firstName + " is " + person.age + " years old.";
+                                                  
  }">
  
-     <input type=button value="9. Classes" onclick="{
-  class Car 
-  constructor(name, year) 
+     <input type=button value="9. Classes" onclick="{ `
+class Car {
+  constructor(name, year) {
     this.name = name;
     this.year = year;
+  }
+}
 
-const myCar = new Car(Ford, 2014);                                       
- document.getElementById('myDiv01').innerHTML =
- myCar.name + myCar.year;
- }">
+const myCar = new Car("Ford", 2014);                                      
+document.getElementById('myDiv01').innerHTML =
+myCar.name + " " + myCar.year;
+                                                    
+`}">
  
  <div id="myDiv01">...</div>
    
