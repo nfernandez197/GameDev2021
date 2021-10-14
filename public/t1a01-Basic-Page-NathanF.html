@@ -1,4 +1,4 @@
-<h5><font color="CornflowerBlue">0.5.0</h5>
+<h5><font color="CornflowerBlue">0.6.0</h5>
 <h1><center><font color="DarkOrchid">Basic Webpage</center></h1>
  
  <input type=button value="0. Pseudo Code" onclick="{ 
@@ -44,38 +44,43 @@ const x = (x, y) => x * y;
  
     <input type=button value="7. Arrays" onclick="{
    const fruits = ['Banana', 'Orange', 'Apple', 'Mango']                                           
- document.getElementById('myDiv01').innerHTML = fruits;
+ document.getElementById('myDiv01').innerHTML = fruits[0];
  }">
  
  
    <input type=button value="8. Objects" onclick="{ 
-// Create an object:
-const person = {
-  firstName: John,
-  lastName: Doe,
-  age: 50,
-  eyeColor: blue
-};
-
+    let myObject = {
+       'firstName': 'Nathan',
+       'age': 17
+     }   
 // Display some data from the object:                     
-document.getElementById('myDiv01').innerHTML = ` 
-person.firstName +  is  + person.age +  years old.;
+document.getElementById('myDiv01').innerHTML = 'myObject.firstName: ' + myObject.firstName;
    
-`}">
+}">
  
-     <input type=button value="9. Classes" onclick="{                                  
-document.getElementById('myDiv01').innerHTML = `
-myCar.name +  + myCar.year;
-        class Car {
-  constructor(name, year) {
-    this.name = name;
-    this.year = year;
-  }
-}
-
-const myCar = new Car(Ford, 2014);             
+     <input type=button value="9. Classes" onclick="{ 
+        class myPeople {
+    constructor(passName, passAge) {
+       this.myName = passName;
+       this.myAge = passAge;
+    }
+    myShow(){
+document.getElementById('myDiv01').innerHTML = 'Hello '+ this.myName + '. You are ' + this.myAge + ' years old<br>'
+    }
+ }  // end class myPeople
+                                                             
+class myPerson extends myPeople {                                                                      
+     myShow(){
+        document.getElementById('myDiv01').innerHTML = this.myName + ' is a great person who is ' + this.myAge + ' years old<br>'
+    }                                                                   
+}    // end extended class myPerson
+                                                                     
                                                               
-`}">
+                                                                                                                                                                                                       
+   myPerson = new myPerson('Nathan', 17)
+   myPerson.myShow()     
+                                                                   
+}">
  
  <div id="myDiv01">...</div>
    
