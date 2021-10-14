@@ -48,11 +48,8 @@ const x = (x, y) => x * y;
  }">
  
  
-   <input type=button value="8. Objects" onclick="{                                                                               
-document.getElementById('myDiv01').innerHTML = ` 
-person.firstName +  is  + person.age +  years old.;
-   
-  // Create an object:
+   <input type=button value="8. Objects" onclick="{ 
+// Create an object:
 const person = {
   firstName: John,
   lastName: Doe,
@@ -60,13 +57,15 @@ const person = {
   eyeColor: blue
 };
 
-// Display some data from the object:    
-                  
+// Display some data from the object:                     
+document.getElementById('myDiv01').innerHTML = ` 
+person.firstName +  is  + person.age +  years old.;
+   
 `}">
  
      <input type=button value="9. Classes" onclick="{                                  
 document.getElementById('myDiv01').innerHTML = `
-myCar.name + " " + myCar.year;
+myCar.name +  + myCar.year;
         class Car {
   constructor(name, year) {
     this.name = name;
