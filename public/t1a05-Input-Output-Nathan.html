@@ -1,4 +1,4 @@
-<h2>Version 0.0.6</h2>
+<h2>Version 0.0.7</h2>
 <h2 align=center>Input & Output by Nathan</h2>
 
 <a href="https://www.w3schools.com/jsref/prop_html_innerhtml.asp">Good reference to input put Javascript innerHTML</a>
@@ -20,6 +20,15 @@
       myIn01 + ' squared = ' + myIn01*myIn01
 }"><br><br><br>
 
+<input id="myText01" type=text value=3 ><br><br><br>
+
+<input type=button value="Squares" onclick="{
+       x = document.getElementById('myText01').value
+   // alert('x: ' + x)
+    document.getElementById('myDiv01').innerHTML = x+' squared is ' + x*x
+       
+}"><br><br><br>
+
 <input id="myText01" type=test value=3 ><br><br><br>
 
 <input type=button value="Show X" onclick="{
@@ -29,14 +38,6 @@
  
 }"><br><br><br>
 
-<input id="myText01" type=text value=3 ><br><br><br>
-
-<input type=button value="Squares" onclick="{
-       x = document.getElementById('myText01').value
-   // alert('x: ' + x)
-    document.getElementById('myDiv01').innerHTML = x+' squared is ' + x*x
-       
-}"><br><br><br>
 
 <div id ="myDiv01">...</div>
 
