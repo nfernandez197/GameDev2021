@@ -3,8 +3,8 @@
 function myExampleFunction(){
    let myIn01 = parseInt(document.getElementById('myText01').value)
    let mySum = myIn01 + myIn01
-   let myReplay = myIn01 + ' + ' + myIn01 + ' = ' + mySum
-   return myReplay
+   let myReply = myIn01 + ' + ' + myIn01 + ' = ' + mySum
+   return myReply
   
 }
   
@@ -32,7 +32,7 @@ function myGrabNumber(){
 
 <input type=text  id="myText01" value="3"><br>
 
-<input type=button value="Function Example" onClick={
+<input type=button value="Function Example" onClick="{
    document.getElementById('myDiv01').innerHTML =  myExampleFunction()
 }">
   
