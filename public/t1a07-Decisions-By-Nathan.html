@@ -106,3 +106,97 @@ Change the number <input type="number" id="myTextIf" value="4" size="10">
 }"><br><br>
 
 <div id='myDiv03'>...</div><br>
+
+
+
+If X =< 8 <br>
+<input id="myNum04" type=number value="8"><br>
+
+<input id="Button" type=button value="button04" onclick="{
+let myIn01 = parseFloat(document.getElementById('myNum04').value)
+
+document.getElementById('myDiv04').innerHTML = myIn01
+
+if(myIn01 <= 8){
+
+document.getElementById('myDiv04').innerHTML = myIn01 + ' Is Less Than or Equal to 8'
+}
+
+
+}">
+
+<div id="myDiv04">..</div>
+
+
+<br><br>
+
+
+
+
+
+If X == 1<br>
+<input id="myNum05" type=number value="3"><br>
+
+<input id="Button" type=button value="button05" onclick="{
+let myIn01 = parseFloat(document.getElementById('myNum05').value)
+
+document.getElementById('myDiv05').innerHTML = myIn01
+
+if(myIn01 >= 1){
+
+document.getElementById('myDiv05').innerHTML = myIn01 + ' Equal to 1'
+}
+
+
+}">
+
+<div id="myDiv05">..</div>
+
+<br><br>
+
+
+If X != 0 <br>
+<input id="myNum06" type=number value="9"><br>
+
+<input id="Button" type=button value="Button07" onclick="{
+let myIn01 = parseFloat(document.getElementById('myNum06').value)
+
+document.getElementById('myDiv06').innerHTML = myIn01
+
+if(myIn01 <= 0){
+
+document.getElementById('myDiv06').innerHTML = myIn01 + ' Is Not Equal To 0'
+}
+
+
+}">
+
+<div id="myDiv06">..</div>
+
+
+<br><br>
+
+
+If X == 20 Else <br>
+<input id="myNum07" type=number value="6"><br>
+
+<input id="Button" type=button value="Button08" onclick="{
+let myIn01 = parseFloat(document.getElementById('myNum07').value)
+
+
+
+if(myIn01 == 20){
+
+document.getElementById('myDiv07').innerHTML += myIn01 + ' Is Equal To twenty'
+}else{
+document.getElementById('myDiv07').innerHTML += myIn01 + ' Is Not Equal To Twenty <br>'
+
+}
+
+
+}">
+
+<div id="myDiv07"></div>
+
+<br><br><br><br>
+
