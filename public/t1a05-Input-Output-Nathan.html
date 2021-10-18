@@ -51,7 +51,7 @@
 X*Y<br>
 <input id="myNum3" type=number value="10">*<input id="myNum4" type=number value="10">
 
-<input type=button value="myButton2" onclick="{
+<input type=button value="this button multiplys" onclick="{
 let myx3 = document.getElementById('myNum3').value
 let myx4 = document.getElementById('myNum4').value
 document.getElementById('Div4').innerHTML = myx3*myx4
@@ -70,7 +70,7 @@ document.getElementById('Div4').innerHTML = myx3*myx4
 XY<br>
 <input id="myNum5" type=number value="9">+<input id="myNum6" type=number value="00">
 
-<input type=button value="myButton3" onclick="{
+<input type=button value="myButton" onclick="{
 let myx5 = document.getElementById('myNum5').value
 let myx6 = document.getElementById('myNum6').value
 document.getElementById('Div5').innerHTML = myx5+myx6
@@ -90,10 +90,11 @@ document.getElementById('Div5').innerHTML = myx5+myx6
 X.0+Y.0<br>
 <input id="myNum7" type=number value="3.14"> + <input id="myNum8" type=number value="1.88">
 
-<input type=button value="myButton4" onclick="{
+<input type=button value="Integers" onclick="{
 let myx7 = document.getElementById('myNum7').value
 let myx8 = document.getElementById('myNum8').value
-document.getElementById('Div2').innerHTML = (parseFloat(myx7) + parseFloat(myx8))              
+document.getElementById('Div2').innerHTML = +  myx7 + ' + ' +  myx8 + ' = ' +  (parseInt(myx7) + parseInt(myx8))  + '<br>' 
+                                                            
 
 }">
 
@@ -128,12 +129,12 @@ document.getElementById('Div6').innerHTML = (parseInt(myx9) + parseInt(myx10))
 
 
 X.0-Y.0<br>
-<input id="myNum11" type=number value="10.5"> - <input id="myNum12" type=number value="10.5">
+<input id="myNum11" type=number value="20"> / <input id="myNum12" type=number value="4">
 
-<input type=button value="myButton" onclick="{
+<input type=button value="This Button Divides" onclick="{
 let myx11 = document.getElementById('myNum11').value
 let myx12 = document.getElementById('myNum12').value
-document.getElementById('Div7').innerHTML = (parseFloat(myx11) - parseFloat(myx12))              
+document.getElementById('Div7').innerHTML = (parseFloat(myx11) / parseFloat(myx12))              
 
 }">
 
@@ -148,7 +149,7 @@ document.getElementById('Div7').innerHTML = (parseFloat(myx11) - parseFloat(myx1
 X-Y<br>
 <input id="myNum13" type=number value="18.5"> - <input id="myNum14" type=number value="1.5">
 
-<input type=button value="myButton" onclick="{
+<input type=button value="This Button Subtracts" onclick="{
 let myx13 = document.getElementById('myNum13').value
 let myx14 = document.getElementById('myNum14').value
 document.getElementById('Div8').innerHTML = (parseInt(myx13) - parseInt(myx14))              
