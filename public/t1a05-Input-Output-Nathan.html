@@ -48,6 +48,17 @@
     document.getElementById('myDiv01').innerHTML = ' Thanks For Clicking Me '    
  }"><br><br>
 
+<input type="text" id="myTextIn03" value="5" size="30">  + <input type="text" id="myTextIn03" value="25" size="30"> 
+
+<input type=button value="myEvent Adds" onclick="{
+   var my1 = document.getElementById('myTextIn03').value  
+   var my2 = document.getElementById('myTextIn04').value  
+   document.getElementById('myDiv02').innerHTML =   ' +  my1 + ' + ' +  my2 + ' = ' +  (my1 + my2)  + '<br>'   
+                                                              
+}"><br><br>
+
+<div id='myDiv02'>...</div><br>
+
                                                                     
 <div id ="myDiv01">...</div>
 
