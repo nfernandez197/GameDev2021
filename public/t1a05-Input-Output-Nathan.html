@@ -46,8 +46,14 @@
 
 <input type=button value="Click Me" onclick="{
     document.getElementById('myDiv01').innerHTML = ' Thanks For Clicking Me '    
- }">
+ }"><br><br>
 
+<input type="text" id="myTextIn01" value="100" >  + <input type="text" id="myTextIn02" value="50" > 
+
+<input id="myButton" type="button" value="Add the numbers" onclick="{
+   let a = 3;
+   let x = (100 + 50) * a;
+document.getElementById('myDiv01').innerHTML = x;                                                                    
 
 <div id ="myDiv01">...</div>
 
