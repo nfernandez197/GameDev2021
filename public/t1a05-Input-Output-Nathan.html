@@ -1,4 +1,4 @@
-<h2>Version 0.0.2</h2>
+<h2>Version 0.0.3</h2>
 <h2 align=center>Input & Output by Nathan</h2>
 
 <a href="https://www.w3schools.com/jsref/prop_html_innerhtml.asp">Good reference to input put Javascript innerHTML</a>
@@ -48,19 +48,115 @@
     document.getElementById('myDiv01').innerHTML = ' Thanks For Clicking Me '    
  }"><br><br>
 
-<input type="text" id="myTextIn3" value="5" size="30">  + <input type="text" id="myTextIn4" value="25" size="30"> 
+X*Y<br>
+<input id="myNum3" type=number value="10">*<input id="myNum4" type=number value="10">
 
-<input id="myButton124" type="button" value="This Button Adds" onclick="{
-                                                                       
-   var my3 = document.getElementById('myTextIn3').value  
-   var my4 = document.getElementById('myTextIn4').value  
-   document.getElementById('myDiv124').innerHTML =  'Numbers being added ' +  my3 + ' + ' +  my4 + ' = ' +  (my3 + my4)  + '<br>'   
-   
+<input type=button value="myButton2" onclick="{
+let myx3 = document.getElementById('myNum3').value
+let myx4 = document.getElementById('myNum4').value
+document.getElementById('Div4').innerHTML = myx3*myx4
 
-                                                           
-}"><br><br>
+}">
 
-<div id='myDiv124'>...</div><br>
+
+
+<div id="Div4">..</div>
+
+<br><br>
+
+
+
+
+XY<br>
+<input id="myNum5" type=number value="9">+<input id="myNum6" type=number value="11">
+
+<input type=button value="myButton3" onclick="{
+let myx5 = document.getElementById('myNum5').value
+let myx6 = document.getElementById('myNum6').value
+document.getElementById('Div5').innerHTML = myx5+myx6
+
+}">
+
+
+
+<div id="Div5">..</div>
+
+<br><br>
+
+
+
+
+
+X.0+Y.0<br>
+<input id="myNum7" type=number value="3.14"> + <input id="myNum8" type=number value="1.88">
+
+<input type=button value="myButton4" onclick="{
+let myx7 = document.getElementById('myNum7').value
+let myx8 = document.getElementById('myNum8').value
+document.getElementById('Div2').innerHTML = (parseFloat(myx7) + parseFloat(myx8))              
+
+}">
+
+
+<div id="Div2">...</div>
+
+<br><br>
+
+
+
+
+
+X+Y<br>
+<input id="myNum9" type=number value="5.5"> + <input id="myNum10" type=number value="5.5">
+
+<input type=button value="myButton" onclick="{
+let myx9 = document.getElementById('myNum9').value
+let myx10 = document.getElementById('myNum10').value
+document.getElementById('Div6').innerHTML = (parseInt(myx9) + parseInt(myx10))              
+
+}">
+
+
+<div id="Div6">...</div>
+
+<br><br>
+
+
+
+
+
+
+
+X.0-Y.0<br>
+<input id="myNum11" type=number value="10.5"> - <input id="myNum12" type=number value="10.5">
+
+<input type=button value="myButton" onclick="{
+let myx11 = document.getElementById('myNum11').value
+let myx12 = document.getElementById('myNum12').value
+document.getElementById('Div7').innerHTML = (parseFloat(myx11) - parseFloat(myx12))              
+
+}">
+
+
+<div id="Div7">...</div>
+
+<br><br>
+
+
+
+
+X-Y<br>
+<input id="myNum13" type=number value="18.5"> - <input id="myNum14" type=number value="1.5">
+
+<input type=button value="myButton" onclick="{
+let myx13 = document.getElementById('myNum13').value
+let myx14 = document.getElementById('myNum14').value
+document.getElementById('Div8').innerHTML = (parseInt(myx13) - parseInt(myx14))              
+
+}">
+
+
+<div id="Div8">...</div>
 
                                                                     
 <div id ="myDiv01">...</div>
