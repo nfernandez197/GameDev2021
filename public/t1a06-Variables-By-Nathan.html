@@ -25,3 +25,150 @@ For Global Mr.Ellis prefers document.myVarName<br>
 }"><br>
 
 <div id="myDiv01">...</div>
+
+
+<input id="myText" type=text value= x>
+
+<input id="MyButtonOne" type=button value="My Button" onclick="{
+
+let myX = document.getElementById('myText').value
+document.getElementById('Div1').innerHTML += myX +'<br>'
+
+
+
+}">
+
+<div id="Div1"></div>
+<br><br>
+
+
+
+
+
+<input id="myText1" type=text value= MyXValue>
+
+<input id="MyButtonOne" type=button value="My Button" onclick="{
+
+let myX = document.getElementById('myText1').value
+document.getElementById('Div2').innerHTML += myX +'<br>'
+
+
+
+}">
+
+<div id="Div2"></div>
+<br>
+
+
+
+
+
+This is True<br>
+<input id="true1" type=button value=True onclick="{
+
+document.getElementById('Div3').innerHTML = 'Correct'
+
+}">
+<input id="false1" type=button value=False onclick="{
+
+
+document.getElementById('Div3').innerHTML = 'InCorrect'
+
+
+}">
+<div id="Div3">...</div>
+
+
+
+X<br>
+
+<input id="myText4" type=number value= 12>
+
+<input id="MyButtonOne" type=button value="Submit" onclick="{
+
+let myX = document.getElementById('myText4').value
+document.getElementById('Div4').innerHTML = myX
+
+
+
+}">
+
+<div id="Div4"></div>
+<br>
+
+
+
+X+Y<br>
+<input id="myText5" type=number value= 12>
+<input id="myText6" type=number value= 12>
+<input id="MyButtonOne" type=button value="Submit" onclick="{
+let myy = document.getElementById('myText5').value
+let myX = document.getElementById('myText6').value
+document.getElementById('Div5').innerHTML = ((parseFloat(myy)) + (parseFloat(myX)))
+
+
+
+}">
+
+<div id="Div5"></div>
+<br>
+
+
+
+
+X+Y+W<br>
+<input id="myText7" type=number value= 34>
+<input id="myText8" type=number value= 35>
+<input id="myText9" type=number value= 36>
+<input id="MyButtonOne" type=button value="Submit" onclick="{
+let myy = document.getElementById('myText7').value
+let myX = document.getElementById('myText8').value
+let myW = document.getElementById('myText9').value
+document.getElementById('Div6').innerHTML = ((parseFloat(myy)) + (parseFloat(myX))+ (parseFloat(myW)))
+
+
+
+}">
+
+<div id="Div6"></div>
+<br>
+
+X-Y-W<br>
+<input id="myText10" type=number value= 34>
+<input id="myText11" type=number value= 35>
+<input id="myText12" type=number value= 36>
+<input id="MyButtonOne" type=button value="Submit" onclick="{
+let myy = document.getElementById('myText10').value
+let myX = document.getElementById('myText11').value
+let myW = document.getElementById('myText12').value
+document.getElementById('Div7').innerHTML = ((parseFloat(myy)) - (parseFloat(myX))- (parseFloat(myW)))
+
+
+
+}">
+
+<div id="Div7"></div>
+<br>
+
+
+
+
+
+
+
+X*Y*W<br>
+<input id="myText13" type=number value= 2>
+<input id="myText14" type=number value= 4>
+<input id="myText15" type=number value= 2>
+<input id="MyButtonOne" type=button value="Submit" onclick="{
+let myy = document.getElementById('myText13').value
+let myX = document.getElementById('myText14').value
+let myW = document.getElementById('myText15').value
+document.getElementById('Div8').innerHTML = ((parseFloat(myy)) * (parseFloat(myX))* (parseFloat(myW)))
+
+
+
+}">
+
+<div id="Div8"></div>
+<br>
