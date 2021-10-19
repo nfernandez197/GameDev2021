@@ -3,7 +3,9 @@
 <html>
 <body style="background-color:MediumSeaGreen;">
 <head>
-<style>
+<style>{
+  color: blue;
+}
 h1 {
   color: white;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
@@ -11,15 +13,17 @@ h1 {
 </style>
 </head>
 <body>
+
+  <h1 style="border: 2px solid Tomato;"><center>Input and Output Webpage</center></h1> 
   
 <a href="https://www.w3schools.com/jsref/prop_html_innerhtml.asp">Good reference to input put Javascript innerHTML</a>
 
 <h4>Example input output code</h4>
-<pre>
+<p style="color:red;"><pre>
   let myIn01 = document.getElementById('myNum01').value
     document.getElementById('myDiv01').innerHTML = 
       myIn01 + ' squared = ' + myIn01*myIn01
-</pre>
+</pre></p>
 
 </body>
 </html>  
