@@ -7,6 +7,35 @@ function myExampleFunction(){
    return myReply
   
 }
+}
+
+
+
+
+
+function myChangeColor(){
+
+
+document.getElementById('myChange').style.color = 'red'
+
+
+
+}
+
+
+
+
+
+function myChangeColorBack(){
+
+
+document.getElementById('myChange').style.color = 'black'
+
+
+
+}
+
+
   
 </script>
 
@@ -37,6 +66,24 @@ Information can also be passed to function (that's more advanced).
 </body>
 </html>     
 
+<br><br>
+Change Color
+<br>
+<input type=button value="ChangeColor" onclick="{
+
+myChangeColor()
+
+}">
+
+
+<input type=button value="ChangeColor" onclick="{
+
+myChangeColorBack()
+
+}">
+
+<h2 id="myChange" style="color:black;"> Change This Color Back </h2>  
+  
 <h4> Example Functions code</h4>
 <pre>
 function myGrabNumber(){
