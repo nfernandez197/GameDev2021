@@ -113,12 +113,16 @@ document.getElementById('myDiv03').innerHTML = myTemp
 <br>
 
 
+Loop X <input id="Loop04" type=number value="2"><br>
+Y Amout Of Times <input id="Loop05" type=number value="3"><br>
+
+
 
 
 <input type=button value="Loop X Times" onclick="{
 let myTemp='';
-let MyMax1 = parseInt(document.getElementById('Loop02').value)
-let MyMax2 = parseInt(document.getElementById('Loop03').value)
+let MyMax1 = parseInt(document.getElementById('Loop04').value)
+let MyMax2 = parseInt(document.getElementById('Loop05').value)
 
 for(let myLoop001 = 0; myLoop001 < MyMax2; myLoop001++){
 for(let myLoop02 = 1; myLoop02 <= MyMax1; myLoop02++){
