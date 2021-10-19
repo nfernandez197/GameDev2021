@@ -179,4 +179,34 @@ document.getElementById('Div8').innerHTML = (parseInt(myx13) - parseInt(myx14))
 
 
 <div id="Div8">...</div>
-                                                                  
+
+<br>
+<br>
+<br>
+<br>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Pythagoras Theorem</title>
+</head>
+<body onload="RandomFn()">
+<h1>Pythagoras Theorem</h1>
+<p>Length of adjacent side a=<b id="adjacent"></b></p>
+<p>Length of opposite side b=<b id="opposite"></b></p>
+
+<P id="ans">The Length of hypotenuse c is</p>
+<input type="button" value="Calculate hypotenuse" onclick="Cal_hypo()"><br><br>
+<input type="button" value="Next Question" onclick=" location.reload();">
+<script>
+function RandomFn() {
+ document.getElementById("adjacent").innerHTML = parseInt(Math.random()*9+1);
+ document.getElementById("opposite").innerHTML = parseInt(Math.random()*9+1);
+ 
+ }
+</script>
+<script type="text/javascript" src="pythagoras1.js"></script>
+
+</body>
+</html>
