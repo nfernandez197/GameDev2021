@@ -1,14 +1,5 @@
 <script>
-  
-function myExampleFunction(){
-   let myIn01 = parseInt(document.getElementById('myText01').value)
-   let mySum = myIn01 + myIn01
-   let myReply = myIn01 + ' + ' + myIn01 + ' = ' + mySum
-   return myReply
-  
-}
-  
-  
+   
 }
 
 
@@ -47,6 +38,14 @@ document.getElementById('myChange').style.color = 'black'
 }
 
 
+  
+function myExampleFunction(){
+   let myIn01 = parseInt(document.getElementById('myText01').value)
+   let mySum = myIn01 + myIn01
+   let myReply = myIn01 + ' + ' + myIn01 + ' = ' + mySum
+   return myReply
+  
+}
 
 
 </script>
@@ -142,9 +141,13 @@ myFun('600')      // This activates the function
 }"><br><br>
 
 <div id='myDiv03'>...</div><br>
+  
 <br>
 <br>
 
+
+
+<br><br>
 Change Color
 <br>
 <input type=button value="ChangeColor" onclick="{
@@ -160,9 +163,10 @@ myChangeColorBack()
 
 }">
 
-<h2 id="myChange" style="color:black;"> Change This Color Back </h2>  
-<br>
-<br>
+<h2 id="myChange" style="color:black;"> Change This Color Back </h2>
+
+
+<br> 
   
 <input id="myText01" type=text value=3 ><br><br>
 <input type=button value="Run Function" onclick="{
