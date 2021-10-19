@@ -148,3 +148,35 @@ myFun('600')      // This activates the function
 }"><br><br>
 
 <div id='myDiv03'>...</div><br>
+<br>
+<br>
+  
+<input id="myText01" type=text value=3 ><br><br>
+<input type=button value="Run Function" onclick="{
+   //alert('button works')
+   myBasicFun()
+}"><br><br>
+<input type=button value="Advanced" onclick="{
+      document.getElementById('myDiv04').innerHTML = myAdvancedFun(3,2)
+}"><br><br>
+<div id="myDiv04" >...</div><br><br>
+
+<script>
+function myBasicFun(){
+  document.getElementById('myDiv05').innerHTML = "Good Day ;)"
+}
+  
+function myAdvancedFun(x,y){
+      return x*y
+}
+</script>
+
+<input id="myText02" type=text value=5 ><br><br>
+<input type=button value="Run Function" onclick="{
+   //alert('button works')
+   myBasicFun()
+}"><br><br>
+<input type=button value="Advanced" onclick="{
+      document.getElementById('myDiv05').innerHTML = myAdvancedFun(5,5)
+}"><br><br>
+<div id="myDiv05" >...</div><br><br>
