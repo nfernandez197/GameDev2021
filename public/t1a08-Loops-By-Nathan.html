@@ -61,3 +61,17 @@ Max loops: <input id="myNum01" type=number value="4" ><br>
 }"><br><br>
 
 <div id='myDiv02'>...</div><br>
+
+
+
+<p id="demo"></p>
+
+<script>
+let text = "";
+
+for (let i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
