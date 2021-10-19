@@ -54,4 +54,32 @@ function myGrabNumber(){
 }">
   
 <div id="myDiv01">...</div>
+
+<br>  
+<br>  
+<br>  
+<br>  
+  
+<script>
+   
+function myAll3Functions(){                                                             
+    document.getElementById('myDiv02').innerHTML = 'This line was made by the main function. <br><br>'
+    let myInline = (function() {                                                                                                                                
+       return 'This line was made using an inline function <br><br>'
+    }  )()
+    let myArrow = (() => {                                                                                                                                
+       return 'This line was made using an arrow function. <br><br>'
+   } )()  
     
+    document.getElementById('myDiv02').innerHTML += myInline + myArrow
+}
+    
+</script>    
+    
+<input id="myButton02" type="button" value="All three Functions together" onclick="{  
+                                                                 
+   myAll3Functions()   
+                                                                 
+}"><br><br>
+
+<div id='myDiv02'>...</div><br>
