@@ -45,3 +45,19 @@ Max loops: <input id="myNum01" type=number value="4" ><br>
 <br>
 <br>
 <br>
+
+ Loop this many times <input type="number" id="myTextLoop" value="10" size="10"> 
+    
+<input id="myButton02" type="button" value="For Loop" onclick="{
+                                                               
+    document.getElementById('myDiv02').innerHTML = ''   // blank out the DIV  
+                                                               
+    for (myLoop = 0;  myLoop <= document.getElementById('myTextLoop').value;    myLoop++){   
+                                                               
+       document.getElementById('myDiv02').innerHTML += 'Loop #'+ myLoop+'<br>'  
+                                                               
+    }
+                                                               
+}"><br><br>
+
+<div id='myDiv02'>...</div><br>
