@@ -111,4 +111,19 @@ document.getElementById('Div4').innerHTML = myX
 
 <div id="Div4"></div>
 <br>
+<br>
+<br>
 
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0"> </script> 
+
+ 
+<input id="myButton05" type="button" value="Functions that return Multiple Variables as an Object" onclick="{  
+                                                                 
+   let {myFoo, myBar} = (function(){ 
+      return {myFoo: 10, myBar: 1000} 
+   })();
+ 
+   document.getElementById('myDiv05').innerHTML = 'Variable myFoo = ' + myFoo  + ' and variable myBar = ' + myBar                                                                      
+}"><br><br>
+
+<div id='myDiv05'>...</div><br>  
