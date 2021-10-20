@@ -57,8 +57,52 @@ Max loops: <input id="myNum01" type=number value="8" ><br>
 <br>
 <br>
 <br>
-<br>
-<br>
+
+<input type=button value="basic for loop only" onclick="{
+    let myTemp = ''
+    let myMax = parseInt(document.getElementById('myNum01').value)
+    for (let myLoop = 0; myLoop < myMax; myLoop++ ){
+      myTemp += 'Loop number: ' + myLoop + '<br>'
+    }
+    document.getElementById('myDiv01').innerHTML = myTemp
+}">
+
+
+
+<input type=button value="Even number identifier" onclick="{
+    document.getElementById('myDiv01').innerHTML = ''
+    let myTemp = ''
+                                                           
+    let myMax = parseInt(document.getElementById('myNum01'.value)
+    for (let myLoop = 0; myLoop < myMax; myLoop++ ){
+                                                           
+        if (myLoop % 2 == 0){
+           myTemp += 'Even Number, '
+       }
+                                                           
+       myTemp += 'Loop number: ' + myLoop + '<br>'
+     }
+     document.getElementById('myDiv01').innerHTML = myTemp
+ }">
+ 
+ <input type=button value="Odd number identifier" onclick="{
+     document.getElementById('myDiv01').innerHTML = ''
+     let myTemp = ''
+                                                           
+     let myMax = parseInt(document.getElementById('myNum01').value)
+     
+     for (let myLoop = 0; myLoop < myMax; myLoop++ ){
+                                                           
+        if (myLoop % 2== 1){
+           myTemp += '<font style=\'color:red;\ '> Odd </font>'\
+       }
+                                      
+       myTemp += 'Loop number:  ' + myLoop + '<br>'
+      }
+      document.getElementById('myDiv01').innerHTML = myTemp
+  }">
+
+<div id="myDiv01"><font color=DarkSlateBlue>...</font></div>
 
  Loop this many times <input type="number" id="myTextLoop" value="35" size="10"> 
     
@@ -133,3 +177,8 @@ document.getElementById('myDiv04').innerHTML = myTemp
 
 
 <div id ="myDiv04">..</div>
+
+
+
+
+
