@@ -1,4 +1,4 @@
-<h2>Version0.0.1</h2>
+<h2>Version0.0.2</h2>
 <!DOCTYPE html>
 <html>
 <body style="background-color:MediumPurple;">
@@ -81,25 +81,24 @@ Max loops: <input id="myNum01" type=number value="4" ><br>
  }">
  
  
- <input type=button value="Odd number identifier" onclick="{
-     document.getElementById('myDiv01').innerHTML = ''
-     let myTemp = ''
-                                                           
-     let myMax = parseInt(document.getElementById('myNum01').value)
-     
-     for (let myLoop = 0; myLoop < myMax; myLoop++ ){
-                                                           
-        if (myLoop % 2 == 1){
-           myTemp += '<font style=\'color:red;\'> Odd </font>
-       }
-                                      
-       myTemp += 'Loop number:  ' + myLoop + '<br>'
+<input type=button value="Odd Number identifier" onclick="{
+    document.getElementById('myDiv01').innerHTML = ''
+    let myTemp = ''
+                                                          
+    let myMax = parseInt(document.getElementById('myNum01').value)
+                                                          
+    for (let myLoop = 0; myLoop < myMax; myLoop++ ){
+                                                          
+       if (myLoop % 2 == 1){
+          myTemp += '<font style=\'color:Cyan;\'> Odd </font>'
+      }
+                                        
+      myTemp += 'Loop number: ' myLoop + '<br>'
      }
      document.getElementById('myDiv01').innerHTML = myTemp
-  }">
-
-<div id="myDiv01"><font color=DarkSlateBlue>...</font></div>
-
+ }">
+ 
+ <div id="myDiv01><font color=Cyan>...</font></div>
 
  Loop this many times <input type="number" id="myTextLoop" value="35" size="10"> 
     
