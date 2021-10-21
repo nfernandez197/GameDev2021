@@ -1,4 +1,4 @@
-<h2>Version 0.0.1</h2>
+<h2>Version 0.0.2</h2>
 <!DOCTYPE html>
 <html>
 <body style="background-color:Indigo;">
@@ -110,17 +110,17 @@ Change the number <input type="number" id="myTextIf" value="4" size="10">
 
 
 
-Less Than or Equal To <br>
-<input id="myNum04" type=number value="8"><br>
+Greater Than <br>
+<input id="myNum04" type=number value="425"><br>
 
-<input id="Button" type=button value="button04" onclick="{
+<input id="Button" type=button value="MyButton" onclick="{
 let myIn01 = parseFloat(document.getElementById('myNum04').value)
 
 document.getElementById('myDiv04').innerHTML = myIn01
 
-if(myIn01 <= 8){
+if(myIn01 > 3){
 
-document.getElementById('myDiv04').innerHTML = myIn01 + ' Is Less Than or Equal to 8'
+document.getElementById('myDiv04').innerHTML = myIn01 + ' Is Greater Than 25'
 }
 
 
@@ -128,24 +128,20 @@ document.getElementById('myDiv04').innerHTML = myIn01 + ' Is Less Than or Equal 
 
 <div id="myDiv04">..</div>
 
-
 <br><br>
 
 
+Less Than <br>
+<input id="myNum05" type=number value="-7"><br>
 
-
-
-Equal To<br>
-<input id="myNum05" type=number value="3"><br>
-
-<input id="Button" type=button value="button05" onclick="{
+<input id="Button" type=button value="MyButton" onclick="{
 let myIn01 = parseFloat(document.getElementById('myNum05').value)
 
 document.getElementById('myDiv05').innerHTML = myIn01
 
-if(myIn01 >= 1){
+if(myIn01 < 0){
 
-document.getElementById('myDiv05').innerHTML = myIn01 + ' Equal to 1'
+document.getElementById('myDiv05').innerHTML = myIn01 + ' Is Less Than 2'
 }
 
 
@@ -156,17 +152,18 @@ document.getElementById('myDiv05').innerHTML = myIn01 + ' Equal to 1'
 <br><br>
 
 
-Not Equal To <br>
-<input id="myNum06" type=number value="9"><br>
 
-<input id="Button" type=button value="Button06" onclick="{
+Greater Than or Equal To<br>
+<input id="myNum06" type=number value="90"><br>
+
+<input id="Button" type=button value="MyButton" onclick="{
 let myIn01 = parseFloat(document.getElementById('myNum06').value)
 
 document.getElementById('myDiv06').innerHTML = myIn01
 
-if(myIn01 <= 0){
+if(myIn01 >= 8){
 
-document.getElementById('myDiv06').innerHTML = myIn01 + ' Is Not Equal To 0'
+document.getElementById('myDiv06').innerHTML = myIn01 + ' Is Greater Than or Equal to 45'
 }
 
 
@@ -174,30 +171,72 @@ document.getElementById('myDiv06').innerHTML = myIn01 + ' Is Not Equal To 0'
 
 <div id="myDiv06">..</div>
 
-
 <br><br>
 
 
-Equal to or If Else <br>
+Less Than or Equal To<br>
 <input id="myNum07" type=number value="6"><br>
 
-<input id="Button" type=button value="Button07" onclick="{
+<input id="Button" type=button value="MyButton" onclick="{
 let myIn01 = parseFloat(document.getElementById('myNum07').value)
 
+document.getElementById('myDiv07').innerHTML = myIn01
 
+if(myIn01 <= 2){
 
-if(myIn01 == 20){
-
-document.getElementById('myDiv07').innerHTML += myIn01 + ' Is Equal To twenty'
-}else{
-document.getElementById('myDiv07').innerHTML += myIn01 + ' Is Not Equal To Twenty <br>'
-
+document.getElementById('myDiv07').innerHTML = myIn01 + ' Is Less Than or Equal to 6'
 }
 
 
 }">
 
-<div id="myDiv07"></div>
+<div id="myDiv07">..</div>
 
-<br><br><br><br>
 
+<br><br>
+
+
+
+
+
+Equal To<br>
+<input id="myNum08" type=number value="3"><br>
+
+<input id="Button" type=button value="MyButton" onclick="{
+let myIn01 = parseFloat(document.getElementById('myNum08').value)
+
+document.getElementById('myDiv08').innerHTML = myIn01
+
+if(myIn01 >= 3){
+
+document.getElementById('myDiv08').innerHTML = myIn01 + ' Equal to 3'
+}
+
+
+}">
+
+<div id="myDiv08">..</div>
+
+<br><br>
+
+
+Not Equal To <br>
+<input id="myNum09" type=number value="1"><br>
+
+<input id="Button" type=button value="MyButton" onclick="{
+let myIn01 = parseFloat(document.getElementById('myNum09').value)
+
+document.getElementById('myDiv09').innerHTML = myIn01
+
+if(myIn01 <= 5){
+
+document.getElementById('myDiv09').innerHTML = myIn01 + ' Is Not Equal To 9'
+}
+
+
+}">
+
+<div id="myDiv09">..</div>
+
+
+<br><br>
