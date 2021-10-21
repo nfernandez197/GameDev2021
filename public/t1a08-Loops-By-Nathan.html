@@ -183,7 +183,24 @@ document.getElementById('myDiv04').innerHTML = myTemp
 
 <div id ="myDiv04">..</div>
 
+<br>
+
+Start of the Loop <input id="MyLOOP2" type=number value="4"><br>
+End of The Loop <input id="MyLOOP3" type=number value="40"><br>
+
+<input type=button value="Basic For loop with Decisions" onclick="{
+let myTemp = ''
+let MyMax = parseInt(document.getElementById('MyLOOP3').value)
+let MyStart = parseInt(document.getElementById('MyLOOP2').value)
+
+for(let myLoop = MyStart; myLoop < MyMax+1; myLoop++){
+myTemp += myLoop +'<br>'
 
 
+document.getElementById('myDiv05').innerHTML = myTemp
+}
+}">
 
+
+<div id ="myDiv05">..</div>
 
