@@ -1,1 +1,89 @@
-HELLO THERE
+<h3>version 0.0.1</h3>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url(",.gif");
+}
+
+h1 {
+  color: maroon;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>Events Webpage</h1>
+
+Enter your name: <input type="text" id="myInput" onfocus="focusFunction()" onblur="blurFunction()">
+
+<script>
+// Focus = Changes the background color of input to yellow
+function focusFunction() {
+  document.getElementById("myInput").style.background = "yellow";
+}
+
+// No focus = Changes the background color of input to red
+function blurFunction() {
+  document.getElementById("myInput").style.background = "red";
+}
+</script>
+
+</body>
+</html>
+<br>
+<br>
+<br>
+<br>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Thanks For Clicking Me! :)";
+}
+</script>
+<br>
+<br>
+<br>
+<br>
+
+<p id="div02" ondblclick="myFunction()">Double-Click This Text To Change Colour.</p>
+<br>
+<br>
+<br>
+<br>
+
+<script>
+function myFunction() {
+  document.getElementById("div02").style.color = "LightSeaGreen";
+}
+</script>
+
+<p id="p1" onmousedown="mouseDown()" onmouseup="mouseUp()">
+Click This text To Activate The mouseDown() function and this is triggered when the mouse button is pressed down over the paragraph. The function sets the color of the text to red. 
+The mouseUp() function is triggered when the mouse button is released. The mouseUp() function sets the color of the text to green.
+</p>
+
+<script>
+function mouseDown() {
+  document.getElementById("p1").style.color = "OrangeRed";
+}
+
+function mouseUp() {
+  document.getElementById("p1").style.color = "Lime";
+}
+</script>
+<br>
+<br>
+<br>
+<br>
