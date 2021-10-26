@@ -44,6 +44,14 @@ p {
   background-color: lightgray;
 }
 
+  .droptarget {
+  float: left; 
+  width: 100px; 
+  height: 35px;
+  margin: 15px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
 </style>
 </head>
 <body>
@@ -161,6 +169,10 @@ function mouseUp() {
 
 <p class="double"><font color="Plum">The function bigImg() is triggered when the user mouse over the image. This function enlarges the image.</font></p>
 <p class="double"><font color="Plum">The function normalImg() is triggered when the mouse pointer is moved out of the image. That function sets the height and width of the image back to normal.</font></p>
+<br>
+<br>
+<br>
+<br>
 
 <script>
 function bigImg(x) {
@@ -173,6 +185,10 @@ function normalImg(x) {
   x.style.width = "64px";
 }
 </script>
+<br>
+<br>
+<br>
+<br>
 
 <<p class="double"><font color="LightBlue">Write something in the text field below to trigger a function.</p>
 
@@ -184,5 +200,37 @@ function normalImg(x) {
 function myFunction() {
   var x = document.getElementById("myInput").value;
   document.getElementById("demo10").innerHTML = "You wrote: " + x;
+}
+</script>
+<br>
+<br>
+<br>
+<br>
+
+<p>Drag the p element back and forth between the two rectangles:</p>
+
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <p ondragstart="dragStart(event)" draggable="true" id="dragtarget">Drag me!</p>
+</div>
+
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<p style="clear:both;" id="demo11"></p>
+
+<script>
+function dragStart(event) {
+  event.dataTransfer.setData("Text", event.target.id);
+  document.getElementById("demo11").innerHTML = "Started to drag the p element";
+}
+
+function allowDrop(event) {
+  event.preventDefault();
+}
+
+function drop(event) {
+  event.preventDefault();
+  var data = event.dataTransfer.getData("Text");
+  event.target.appendChild(document.getElementById(data));
+  document.getElementById("demo11").innerHTML = "The p element was dropped";
 }
 </script>
