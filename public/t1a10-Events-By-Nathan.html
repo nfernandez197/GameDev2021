@@ -173,3 +173,16 @@ function normalImg(x) {
   x.style.width = "64px";
 }
 </script>
+
+<<p class="double"><font color="LightBlue">Write something in the text field below to trigger a function.</p>
+
+<input type="text" id="myInput" oninput="myFunction()">
+
+<p id="demo10"></p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myInput").value;
+  document.getElementById("demo10").innerHTML = "You wrote: " + x;
+}
+</script>
