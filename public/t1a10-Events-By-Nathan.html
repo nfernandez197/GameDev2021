@@ -4,13 +4,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script>
-function myFunction() {
-  alert("Page is loaded");
-}
-</script>
-</head>
-
 <style>
     
 body {
@@ -63,11 +56,6 @@ p {
 }
 </style>
 </head>
-
-<body onload="myFunction()">
-</body>
-
-</html>
 
 <body>
 
@@ -246,3 +234,18 @@ function drop(event) {
   document.getElementById("demo11").innerHTML = "The p element was dropped";
 }
 </script>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" onkeypress="myFunction()">
+
+<script>
+function myFunction() {
+  alert("Page had loaded");
+}
+</script>
+
+</body>
+</html>
