@@ -125,29 +125,6 @@ Loop this many times <input type="number" id="myTextLoop" value="35" size="10">
 <br>
 <br>
 
-<button type=button value="odd=BlueViolet, mult. 10=CadetBlue" onClick="{
-   let myMax = parseInt(document.getElementById('myNum06').value)
-   let myTemp = ''
-   for (let myLoop = 0; myLoop < myMax; myLoop++ ){ 
-      if (myLoop % 10 == 0){
-		myTemp += '<font style=color:CadetBlue>  '
-	  } else if (myLoop % 2 == 0) {
-	  myTemp += '<font style=color:DarkRed> '
-	  } else if (myLoop % 2 == 1) {
-	  myTemp += '<font style=color:BlueViolet> '
-	  } else {
-	  myTemp += '<font style=color:black> '
-	  }
-	  myTemp += 'loop number: ' + myLoop + '</font><br>'
-	  }
-	  document.getElementById('mySpan06').innerHTML = myTemp
-}"><span style=color:DarkRed>even, </span><span style=color:BlueViolet>odd, </span><span style=color:CadetBlue>multiple 10</span></button>
-
-<span id ="mySpan06">..</span>
-<br>
-<br>
-<br>
-<br>
 
 <input type=button value=" all odd numbers '-_-'" onClick="{
    let myMax = parseInt(document.getElementById('myNum01').value)
@@ -162,7 +139,7 @@ Loop this many times <input type="number" id="myTextLoop" value="35" size="10">
 	  myTemp += 'loop number: ' + myLoopCount + '<br>'
 	  
 	  }
-	  document.getElementById('myDiv01').innerHTML = myTemp
+	  document.getElementById('myDiv07').innerHTML = myTemp
 }">
 
 <div id ="myDiv07">..</div>
