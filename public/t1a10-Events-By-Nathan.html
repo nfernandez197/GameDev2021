@@ -137,25 +137,6 @@ function blurFunction() {
 <br>
 <br>
 
-<!DOCTYPE html>
-<html>
-<body>
-
-<p id="div05" ondblclick="myFunction()">Double-click me to change my text color.</p>
-
-<script>
-function myFunction() {
-  document.getElementById("div05").style.color = "red";
-}
-</script>
-
-</body>
-</html>
-<br>
-<br>
-<br>
-<br>
-
 <p id="p0" onmousedown="mouseDown()" onmouseup="mouseUp()">
 Click This text To Activate The mouseDown() function and this is triggered when the mouse button is pressed down over the paragraph. The function sets the color of the text to red. 
 The mouseUp() function is triggered when the mouse button is released. The mouseUp() function sets the color of the text to green.
@@ -172,17 +153,6 @@ function mouseUp() {
 </script>
 <br>
 <br>
-<br>
-<br>
-
-First name: <input type="text" id="fname" onfocus="myFunction(this.id)"><br>
-Last name: <input type="text" id="lname" onfocus="myFunction(this.id)">
-
-<script>
-function myFunction(x) {
-  document.getElementById(x).style.background = "yellow";
-}
-</script>
 <br>
 <br>
 
@@ -253,5 +223,38 @@ function drop(event) {
   var data = event.dataTransfer.getData("Text");
   event.target.appendChild(document.getElementById(data));
   document.getElementById("demo11").innerHTML = "The p element was dropped";
+}
+</script>
+<br>
+<br>
+<br>
+<br>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="div05" ondblclick="myFunction()">Double-click me to change my text color.</p>
+
+<script>
+function myFunction() {
+  document.getElementById("div05").style.color = "red";
+}
+</script>
+
+</body>
+</html>
+<br>
+<br>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo00"></p>
+
+<p>this function is triggered when the button is clicked.</p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo00").innerHTML = "Thanks For Clicking Me ¯\_(ツ)_/¯";
 }
 </script>
