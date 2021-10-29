@@ -114,8 +114,21 @@ function mouseOut() {
 <br>
 <br>
 <br>
+
+<button ondblclick="myFunction()">Double-click me</button>
+
+<p id="demo22"></p>
+
+<p>A function is triggered when the button is double-clicked. The function outputs some text in a p element with id="demo".</p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo22").innerHTML = "Hello There";
+}
+</script>
 <br>
-  
+<br>
+      
 Enter your name: <input type="text" id="myInput" onfocus="focusFunction()" onblur="blurFunction()"><br><br>
 
 <script>
@@ -229,32 +242,3 @@ function drop(event) {
 <br>
 <br>
 <br>
-
-<!DOCTYPE html>
-<html>
-<body>
-
-<p id="div05" ondblclick="myFunction()">Double-click me to change my text color.</p>
-
-<script>
-function myFunction() {
-  document.getElementById("div05").style.color = "red";
-}
-</script>
-
-</body>
-</html>
-<br>
-<br>
-
-<button onclick="myFunction()">Click me</button>
-
-<p id="demo00"></p>
-
-<p>this function is triggered when the button is clicked.</p>
-
-<script>
-function myFunction() {
-  document.getElementById("demo00").innerHTML = "Thanks For Clicking Me ¯\_(ツ)_/¯";
-}
-</script>
