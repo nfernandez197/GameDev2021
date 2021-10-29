@@ -170,6 +170,17 @@ function mouseUp() {
 <br>
 <br>
 
+First name: <input type="text" id="fname" onfocus="myFunction(this.id)"><br>
+Last name: <input type="text" id="lname" onfocus="myFunction(this.id)">
+
+<script>
+function myFunction(x) {
+  document.getElementById(x).style.background = "yellow";
+}
+</script>
+<br>
+<br>
+
 <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="blue-fire-pyrotechnics.gif" alt="blue-fire-pyrotechnics" width="32" height="32">
 
 <p class="double"><font color="Plum">The function bigImg() is triggered when the user mouse over the image. This function enlarges the image.</font></p>
