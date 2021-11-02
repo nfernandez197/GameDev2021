@@ -13,9 +13,6 @@ body {
   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 }
 
-div {
-  background-color: #d5f4e6;
-}
 </style>
 </head>
 <body>
@@ -46,7 +43,20 @@ Max Array Entry: <input type=text id="myText01" value="3"><br>
 }">
 
 <div id="myDiv01">...</div>
-
-
 <br>
+<br>
+<br>
+<br>  
+  
+ <input id="myText01" type=text value=3 ><br><br>
 
+ <input type=button value="make and show Array" onclick="{
+    document.myArray = new Array()
+    document.myArray[0] = 2;
+    document.myArray[1] = 4;
+    document.myArray[2] = 8;
+                               
+    document.getElementById('myDiv02').innerHTML = '[1] value is: '+document.myArray[1]
+}"><br><br>
+
+<div id="myDiv02">...</div>
