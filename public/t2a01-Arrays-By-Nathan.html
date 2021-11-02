@@ -1,4 +1,4 @@
-<h3>Version 0.0.1</h3>
+<font color="LightGreen"><h3>Version 0.0.1</h3>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,7 +12,10 @@ body {
   background-color: #483D8B;
   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 }
-
+p {
+  font-family: verdana;
+  font-size: 15px;
+} 
 </style>
 </head>
 <body>
@@ -22,9 +25,9 @@ body {
 
 Arrays are stored numbered variables 
 
-<h4> Example Of Working Array Code</h4>
+  <font color="DeepSkyBlue"><h4>Example Of Working Array Code</h4></font>
 
-Max Array Entry: <input type=text id="myText01" value="3"><br>
+<p style="color:red;">Max Array Entry: <input type=text id="myText01" value="3"></p><br>
 
 <input type=button value="Example onClick" onClick="{
    let myTemp = document.getElementById('myText01').value
@@ -59,4 +62,11 @@ Max Array Entry: <input type=text id="myText01" value="3"><br>
     document.getElementById('myDiv02').innerHTML = '[1] value is: '+document.myArray[1]
 }"><br><br>
 
+ <input type=button value="Loop Through Array" onclick="{
+    myTemp = ''
+    for (i=0;   i<3;      i++){
+     myTemp += 'Array value: ' + i + ', is: '+ document.myArray[i] + '<br>'
+     }
+    document.getElementById('myDiv02').innerHTML = myTemp
+}"><br><br>
 <div id="myDiv02">...</div>
