@@ -71,3 +71,50 @@ Arrays are stored numbered variables
     document.getElementById('myDiv02').innerHTML = myTemp
 }"><br><br>
 <div id="myDiv02">...</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<h3>1-20 Loop</h3> 
+Max loops <input id="MyLOOP2" type=number value="20"><br>
+
+<input type=button value="Basic For loop with Decisions" onclick="{
+let myTemp = ''
+let MyMax = parseInt(document.getElementById('MyLOOP2').value)
+
+
+myArray = new Array();
+
+
+myArray[0] = 'This is One'
+myArray[1] = 'This is Two'
+myArray[2] = 'This is Three'
+myArray[3] = 'This is Four'
+myArray[4] = 'This is Five'
+myArray[5] = 'This is Six'
+myArray[6] = 'This is Seven'
+myArray[7] = 'This is Eight'
+myArray[8] = 'This is Nine'
+myArray[9] = 'This is Ten'
+myArray[10] = 'This is Eleven'
+myArray[11] = 'This is Twelve'
+myArray[12] = 'This is Thirteen'
+myArray[13] = 'This is Forteen'
+myArray[14] = 'This is Fifthteen'
+myArray[15] = 'This is Sixteen'
+myArray[16] = 'This is Seventeen'
+myArray[17] = 'This is Eighteen'
+myArray[18] = 'This is Nineteen'
+myArray[19] = 'This is Twenty'
+
+for(let myLoop = 0; myLoop < MyMax; myLoop++){
+myTemp +=  myArray[myLoop] + '<br>'
+
+}
+document.getElementById('myDiv03').innerHTML = myTemp
+}">
+
+
+<div id ="myDiv03">..</div>
