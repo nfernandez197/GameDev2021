@@ -39,5 +39,28 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
 
 <div id="myDiv01">...</div>
 
-
 <br>
+<br>
+<br>
+<br>
+
+<p>TextBox with Object</p> <br>
+    <textarea id="myTextAreaObject" rows="8" cols="70" wrap="false">
+   "firstName": "John",
+   "lastName": "Doe",
+   "age": 22,
+   "eyeColor": "brown"
+
+    </textarea><br> 
+    
+<input id="myButton128" type="button" value="Store as an object" onclick="{
+      
+    var myPerson = {}                                                              
+    myPerson = JSON.parse(document.getElementById('myTextAreaObject').value)   
+                                                                         
+    document.getElementById('myDiv02').innerHTML = 'Name: ' + myPerson.firstName + ' '+ myPerson.lastName + ', Age: '  + myPerson.age  + ', EyeColor: ' + myPerson.eyeColor + '<br>'
+                                                       
+                                                              
+}"><br><br>
+
+<div id='myDiv02'>...</div><br>
