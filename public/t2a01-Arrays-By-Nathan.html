@@ -76,7 +76,7 @@ Arrays are stored numbered variables
 <br>
 <br>
 
-<h3 style="color:blue;">1-20 Loop</h3> 
+<h3 style="color:LightGrey;">1-20 Loop</h3> 
 Max loops <input id="MyLOOP2" type=number value="20"><br>
 
 <input type=button value="Basic For loop with Decisions" onclick="{
@@ -124,7 +124,7 @@ document.getElementById('myDiv03').innerHTML = myTemp
 <br>
 <br>  
     
-<h4 style="color:blue;"><b> Use Array To Store Variable With If 1-8</b></h4> 
+<h4 style="color:LightGrey;"><b>Array To Store Variable</b></h4> 
 myx INPUT <input id="MyLOOP19" type=number value="10"><br>
 myx INPUT <input id="MyLOOP20" type=number value="-3"><br>
 myx INPUT <input id="MyLOOP21" type=number value="12"><br>
@@ -166,11 +166,8 @@ else{document.getElementById('myDiv04').innerHTML += myArray[myLoop] + ' Is Less
 
 }
 
-
-
-
-
-
+                                                                  
+                                                                  
 
 }">
 
@@ -182,3 +179,22 @@ else{document.getElementById('myDiv04').innerHTML += myArray[myLoop] + ' Is Less
 <br>
 <br>
 <br>
+
+<h3 style="color:LightGrey;">Array That Can Hold More Than 1 Value</h3>   
+<p id="demo"></p>
+
+<input type=button value="Example onClick" onClick="{
+   let myTemp = document.getElementById('demo').value
+   let mySum = ''
+   document.getElementById('myDiv05').innerHTML = ' '
+                                                    
+   myArray = new Array()
+   myArray[0] = 'Owl'
+   myArray[1] = 'Hummingbirds'
+   myArray[2] = 'Penguin'
+                                                    
+   for (let myLoop=0;   myLoop < myTemp; myLoop++){
+      mySum += 'Loop #: ' + myLoop + ' array entry: ' + myArray[myLoop] +'<br>'
+   }
+   document.getElementById('myDiv05').innerHTML = mySum
+}"> 
