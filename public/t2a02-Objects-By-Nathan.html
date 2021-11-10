@@ -91,3 +91,30 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
 }"><br><br>
 
 <div id='myDiv02'>...</div><br>
+
+<input id="myText01" type=text value="Nathan"><br>
+
+<input id="myText02" type=text value="17"><br>
+
+<input id="myText03" type=text value="Black"><br>
+
+<br>
+
+<br>
+<input type="button" value="Show Object" onclick="{
+
+  myObject = {
+	'myName' : document.getElementById('myText01').value,
+	'myNumber' : document.getElementById('myText02').value,
+	'myHairColor' : document.getElementById('myText03').value,
+}
+
+  document.getElementById('myDiv01').innerHTML = 
+   
+   '<font color=CornflowerBlue><b> Name:</b></font> ' +  myObject.myName 
+   + '<br><font color=Crimson><b>Age:</b></font>' +  myObject.myNumber 
+   + '<br><font color=Chocolate><b>Hair Color:</b></font>' +  myObject.myHairColor
+
+}">
+
+<div id="myDiv01"><hr></div>
