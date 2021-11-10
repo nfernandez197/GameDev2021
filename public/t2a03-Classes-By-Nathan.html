@@ -1,6 +1,31 @@
-<h3>Version 0.0.2</h3>
+<h3><font color="DarkTurquoise">Version 0.0.2</h3>
 <h1 align=center>Classes Webpage</h1>
-
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body  {
+  background-image: url("ww.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ h1 {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+ h2 {
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+ p {
+  text-decoration: underline;
+  -webkit-text-decoration-color: red; /* Safari */  
+  text-decoration-color: red;
+}
+</style>
+</head>
+<body>
+</body>
+</html>
 <a href="https://www.w3schools.com/js/js_classes.asp">Find a good reference to Javascript Classes </a><br>
 Classes are bothObjects that store variables (called Properties) and Functions
 that work on the variables (called Methods)
@@ -39,4 +64,29 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
 }">
 
 <div id="myDiv01">...</div>
-                                                 
+</////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////>
+
+Name <input type=text id="myText01" value="Nathan"><br>
+
+Age <input type=text id="myText02" value="17"><br>
+<input type=button value="ExampleClass" onClick="{
+let x = document.getElementById('myText01').value
+let y = document.getElementById('myText02').value
+class myAnimal{
+constructor(passName,passAge){
+this.myName = passName;
+this.myAge = passAge
+
+}
+
+myShow(){
+document.getElementById('myDiv02').innerHTML = 'Hello ' + this.myName + ' You Are ' + this.myAge + ' Years old<br> '
+}
+}
+myDog = new myAnimal( x, y)
+myDog.myShow()
+
+}">
+
+<div id="myDiv02">...</div>
+<br><br>
