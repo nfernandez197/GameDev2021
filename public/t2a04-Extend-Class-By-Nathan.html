@@ -37,33 +37,55 @@ class myCat extends myAnimal  {
 
 
 <h4> Example working Classes code</h4>
-<input type=button value="Example Class Set and Show Class Animal" onClick="{
-                                                                            
-  myDog = new myAnimal('Snickers', 5)
-  myDog.myShow
-                                                                            
-}">
+Name <input type=text id="myText03" value="Snickers"><br>
 
-<h4> Example extending Class code</h4>
-Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
+Age <input type=text id="myText04" value="14"><br>
+<input type=button value="ExampleClass" onClick="{
+let x = document.getElementById('myText03').value
+let y = document.getElementById('myText04').value
+class myAnimal{
+constructor(passName,passAge){
+this.myName = passName;
+this.myAge = passAge
 
-<input type=button value="Example Extend Class Animal" onClick="{
-                                                                
- class myCat extends myAnimal {
-     myShow(){
-       document.getElementById('myDiv01').innerHTML = this.myName + ' is a great cat who is ' + this.myAge + ' years
-old<br>'
-    }
-}    // end extended class myCat
-                                                                
-                                                                
-                                                                
-                                                                
-   myPet = new myCat('Flurry', 14)
-   myPet.myShow()
-                                                                
+}
+
+myShow(){
+document.getElementById('myDiv01').innerHTML =  this.myName + 'is a great cat who is ' + this.myAge + ' Years old<br> '
+}
+}
+myDog = new myAnimal( x, y)
+myDog.myShow()
+
 }">
 
 <div id="myDiv01">...</div>
+<br><br>
 
 
+Name <input type=text id="myText07" value="tree"><br>
+BirthPlace <input type=text id="myText09" value="Amazon"><br>
+Age <input type=text id="myText08" value="150"><br>
+<input type=button value="ExampleClass" onClick="{
+let x = document.getElementById('myText07').value
+let y = document.getElementById('myText08').value
+let z = document.getElementById('myText09').value
+class myAnimal{
+constructor(passName,passAge,passBirth){
+this.myName = passName;
+this.myAge = passAge;
+this.myBirth = passBirth
+
+}
+
+myShow(){
+document.getElementById('myDiv02').innerHTML =  'Hello ' + this.myName + ' You Are ' + this.myAge + ' Years old and Was Born in ' + this.myBirth
+}
+}
+myDog = new myAnimal( x, y , z)
+myDog.myShow()
+
+}">
+
+<div id="myDiv02">...</div>
+<br><br>
