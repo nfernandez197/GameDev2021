@@ -118,3 +118,32 @@ Nothing: <input type=text id="myText01" value="Useless at the moment"><br>
 }">
 
 <div id="myDiv03">...</div>
+	
+	<input id="myText03a" type=text value=17><br>
+<input id="myText03b" type=text value=brown><br>
+<input id="myText03c" type=text value=February><br>
+
+<input type=button value="Make and Show Object" onclick="{
+ let x = document.getElementById('myText03a').value
+ let y = document.getElementById('myText03b').value
+ let z = document.getElementById('myText03c').value                                                        
+ let myObject = {
+       'firstName':'Nathan',
+       'lastName':'Pearce',                                                  
+       'age' : x,
+       'eyeColor' : y,
+       'hairColor' :'black',
+       'birthMonth': z                                                  
+       }
+document.getElementById('myDiv04').innerHTML ='First Name: ' + myObject.firstName + '<br>'
+document.getElementById('myDiv04').innerHTML +='Last Name: ' + myObject.lastName + '<br>'
+document.getElementById('myDiv04').innerHTML +='Age: ' + myObject.age + '<br>'                                                         
+document.getElementById('myDiv04').innerHTML +='Eye Color: ' + myObject.eyeColor + '<br>' 
+document.getElementById('myDiv04').innerHTML +='Hair Color: ' + myObject.hairColor + '<br>' 
+document.getElementById('myDiv04').innerHTML +='Birth Month: ' + myObject.birthMonth                                                         
+                                                         
+}"><br><br>
+
+
+<div id="myDiv04">...</div><br><br>
+	
