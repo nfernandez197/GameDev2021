@@ -1,5 +1,33 @@
 <h3>Version 0.0.1</h3>
-
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body  {
+  background-image: url("bench.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ h1 {
+   border: 2px solid Orchid;
+  outline-style: dotted;
+  outline-color: LightCyan;
+  text-shadow: 0 0 3px #EE82EE;
+}
+ h2 {
+  text-shadow: 0 0 3px #4169E1, 0 0 5px #EE82EE;
+}
+ p {
+  text-decoration: underline;
+  -webkit-text-decoration-color: DarkSlateBlue; /* Safari */  
+  text-decoration-color: Cyan;
+  color: #b58;
+}
+</style>
+</head>
+<body>
+</body>
+</html>
 <h1 align=center>Spy Webpage</h1>
 <textarea id="myArea01" rows=4 cols=70>Hello how are you doing today</textarea><br> 
 
@@ -9,59 +37,59 @@
    myString = document.getElementById('myArea01').value.split('')
    for (let myLoop=0;   myLoop < myString.length; myLoop++){
       myTemp = myString[myLoop]
-      if (myString[myLoop] == 'a') {myTemp  = 'z'} 
-      if (myString[myLoop] == 'b') {myTemp  = 'y'} 
-      if (myString[myLoop] == 'c') {myTemp  = 'x'} 
-      if (myString[myLoop] == 'd') {myTemp  = 'w'} 
-      if (myString[myLoop] == 'e') {myTemp  = 'v'} 
-      if (myString[myLoop] == 'f') {myTemp  = 'u'} 
-      if (myString[myLoop] == 'g') {myTemp  = 't'} 
-      if (myString[myLoop] == 'h') {myTemp  = 's'} 
-      if (myString[myLoop] == 'i') {myTemp  = 'r'} 
-      if (myString[myLoop] == 'j') {myTemp  = 'q'} 
-      if (myString[myLoop] == 'k') {myTemp  = 'p'} 
-      if (myString[myLoop] == 'l') {myTemp  = 'o'} 
-      if (myString[myLoop] == 'm') {myTemp  = 'n'} 
-      if (myString[myLoop] == 'n') {myTemp  = 'm'} 
-      if (myString[myLoop] == 'o') {myTemp  = 'l'} 
-      if (myString[myLoop] == 'p') {myTemp  = 'k'} 
-      if (myString[myLoop] == 'q') {myTemp  = 'j'} 
-      if (myString[myLoop] == 'r') {myTemp  = 'i'} 
-      if (myString[myLoop] == 's') {myTemp  = 'h'} 
-      if (myString[myLoop] == 't') {myTemp  = 'g'} 
-      if (myString[myLoop] == 'u') {myTemp  = 'f'} 
-      if (myString[myLoop] == 'v') {myTemp  = 'e'} 
-      if (myString[myLoop] == 'w') {myTemp  = 'd'} 
-      if (myString[myLoop] == 'x') {myTemp  = 'c'} 
-      if (myString[myLoop] == 'y') {myTemp  = 'b'} 
-      if (myString[myLoop] == 'z') {myTemp  = 'a'} 
+      if (myString[myLoop] == 'a') {myTemp  = 'y'} 
+      if (myString[myLoop] == 'b') {myTemp  = 'z'} 
+      if (myString[myLoop] == 'c') {myTemp  = 'w'} 
+      if (myString[myLoop] == 'd') {myTemp  = 'x'} 
+      if (myString[myLoop] == 'e') {myTemp  = 'u'} 
+      if (myString[myLoop] == 'f') {myTemp  = 'v'} 
+      if (myString[myLoop] == 'g') {myTemp  = 's'} 
+      if (myString[myLoop] == 'h') {myTemp  = 't'} 
+      if (myString[myLoop] == 'i') {myTemp  = 'q'} 
+      if (myString[myLoop] == 'j') {myTemp  = 'r'} 
+      if (myString[myLoop] == 'k') {myTemp  = 'o'} 
+      if (myString[myLoop] == 'l') {myTemp  = 'p'} 
+      if (myString[myLoop] == 'm') {myTemp  = 'm'} 
+      if (myString[myLoop] == 'n') {myTemp  = 'n'} 
+      if (myString[myLoop] == 'o') {myTemp  = 'k'} 
+      if (myString[myLoop] == 'p') {myTemp  = 'l'} 
+      if (myString[myLoop] == 'q') {myTemp  = 'i'} 
+      if (myString[myLoop] == 'r') {myTemp  = 'j'} 
+      if (myString[myLoop] == 's') {myTemp  = 'g'} 
+      if (myString[myLoop] == 't') {myTemp  = 'h'} 
+      if (myString[myLoop] == 'u') {myTemp  = 'e'} 
+      if (myString[myLoop] == 'v') {myTemp  = 'f'} 
+      if (myString[myLoop] == 'w') {myTemp  = 'c'} 
+      if (myString[myLoop] == 'x') {myTemp  = 'd'} 
+      if (myString[myLoop] == 'y') {myTemp  = 'a'} 
+      if (myString[myLoop] == 'z') {myTemp  = 'b'} 
       
-      if (myString[myLoop] == 'A') {myTemp  = 'Z'} 
-      if (myString[myLoop] == 'B') {myTemp  = 'Y'} 
-      if (myString[myLoop] == 'C') {myTemp  = 'X'} 
-      if (myString[myLoop] == 'D') {myTemp  = 'W'} 
-      if (myString[myLoop] == 'E') {myTemp  = 'V'} 
-      if (myString[myLoop] == 'F') {myTemp  = 'U'} 
-      if (myString[myLoop] == 'G') {myTemp  = 'T'} 
-      if (myString[myLoop] == 'H') {myTemp  = 'S'} 
-      if (myString[myLoop] == 'I') {myTemp  = 'R'} 
-      if (myString[myLoop] == 'J') {myTemp  = 'Q'} 
-      if (myString[myLoop] == 'K') {myTemp  = 'P'} 
-      if (myString[myLoop] == 'L') {myTemp  = 'O'} 
-      if (myString[myLoop] == 'M') {myTemp  = 'N'} 
-      if (myString[myLoop] == 'N') {myTemp  = 'M'} 
-      if (myString[myLoop] == 'O') {myTemp  = 'L'} 
-      if (myString[myLoop] == 'P') {myTemp  = 'K'} 
-      if (myString[myLoop] == 'Q') {myTemp  = 'J'} 
-      if (myString[myLoop] == 'R') {myTemp  = 'I'} 
-      if (myString[myLoop] == 'S') {myTemp  = 'H'} 
-      if (myString[myLoop] == 'T') {myTemp  = 'G'} 
-      if (myString[myLoop] == 'U') {myTemp  = 'F'} 
-      if (myString[myLoop] == 'V') {myTemp  = 'E'} 
-      if (myString[myLoop] == 'W') {myTemp  = 'D'} 
-      if (myString[myLoop] == 'X') {myTemp  = 'C'} 
-      if (myString[myLoop] == 'Y') {myTemp  = 'B'} 
-      if (myString[myLoop] == 'Z') {myTemp  = 'A'} 
+      if (myString[myLoop] == 'A') {myTemp  = 'Y'} 
+      if (myString[myLoop] == 'B') {myTemp  = 'Z'} 
+      if (myString[myLoop] == 'C') {myTemp  = 'W'} 
+      if (myString[myLoop] == 'D') {myTemp  = 'X'} 
+      if (myString[myLoop] == 'E') {myTemp  = 'U'} 
+      if (myString[myLoop] == 'F') {myTemp  = 'V'} 
+      if (myString[myLoop] == 'G') {myTemp  = 'S'} 
+      if (myString[myLoop] == 'H') {myTemp  = 'T'} 
+      if (myString[myLoop] == 'I') {myTemp  = 'Q'} 
+      if (myString[myLoop] == 'J') {myTemp  = 'R'} 
+      if (myString[myLoop] == 'K') {myTemp  = 'O'} 
+      if (myString[myLoop] == 'L') {myTemp  = 'P'} 
+      if (myString[myLoop] == 'M') {myTemp  = 'M'} 
+      if (myString[myLoop] == 'N') {myTemp  = 'N'} 
+      if (myString[myLoop] == 'O') {myTemp  = 'K'} 
+      if (myString[myLoop] == 'P') {myTemp  = 'L'} 
+      if (myString[myLoop] == 'Q') {myTemp  = 'I'} 
+      if (myString[myLoop] == 'R') {myTemp  = 'J'} 
+      if (myString[myLoop] == 'S') {myTemp  = 'G'} 
+      if (myString[myLoop] == 'T') {myTemp  = 'H'} 
+      if (myString[myLoop] == 'U') {myTemp  = 'E'} 
+      if (myString[myLoop] == 'V') {myTemp  = 'F'} 
+      if (myString[myLoop] == 'W') {myTemp  = 'C'} 
+      if (myString[myLoop] == 'X') {myTemp  = 'D'} 
+      if (myString[myLoop] == 'Y') {myTemp  = 'A'} 
+      if (myString[myLoop] == 'Z') {myTemp  = 'B'} 
 
 
 
