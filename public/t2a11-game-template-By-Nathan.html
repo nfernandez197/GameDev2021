@@ -23,7 +23,10 @@ function myHitOther(my1,my2){
    }
 }
 
-
+  document.myXpixels = 10
+  document.myYpixels = 7
+   
+   
 function myCheckHit(){
    if ( myHitOther('myImg01','myImg02') ){
        alert('you lose')
@@ -85,7 +88,15 @@ function myCheckHit(){
 <div id="myDiv01">...</div>
 <span id="mySpanBackground" style="z-index:-1; position:absolute; left:0; top:0; width:3000; height:2000"> 
  <img src="space21.jpg" width=4000> </span><br>
-
+<input type=button value="Move 10 pixels right" onClick="{
+   //alert( parseInt(document.getElementById('mySpan01').style.left) ) 
+                          
+document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + document.myXpixels
+if(myHitOther('mySpan01', 'mySpan02')){
+   document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) - document.myXpixels
+}
+                        
+}">
 document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + document.myXpixels
 if(myHitOther('mySpan01', 'mySpan02')){
    document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) - document.myXpixels
