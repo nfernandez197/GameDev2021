@@ -1,3 +1,10 @@
+<h6> Version 0.0.1 </h6>
+
+<body id="myBody" style="background-repeat:repeat; background-size: 80%" background="myBackground01.jpg">
+
+<h1 align=center>t2a11 Game Template by Fred</h1>
+<br><br><br><br>
+
 <script>
 
    // global variables here
@@ -23,88 +30,40 @@ function myHitOther(my1,my2){
    }
 }
 
-  document.myXpixels = 10
-  document.myYpixels = 7
-   
-   
+
 function myCheckHit(){
    if ( myHitOther('myImg01','myImg02') ){
-       alert('you lose')
-      //document.getElementById('myImg01').style.left = '20px'
+       alert('you lose')  
+       document.getElementById('myImg01').style.left = '20px'
+       location = 't2a13-keydown.html'  // go to your next level
    }
- if(myHitOther('mySpan01', 'mySpan20')){
-    document.getElementById('mySpan20').style.left = '-400px'
-    alert('You Win!')
-    location = 'https://google.ca'
-  }
-   // more if statements here
 
-}
 
-// Auto moves your background
-  setInterval(function(){
-      document.getElementById('mySpanBackground').style.left = parseInt(document.getElementById('mySpanBackground').style.left) - 10
-      if (parseInt(document.getElementById('mySpanBackground').style.left) < -1900){
-       document.getElementById('mySpanBackground').style.left = '0px'
-      }
-  }, 30);
+   // more if statements here like the above
+
+
+
+}  // end of myCheckHit()
 
 
 </script>
 
-<h2><font color="Blue">version 0.0.1</h2>
+<img id="myImg01" style="position:absolute; width:100px; height:80px; top:0px; left:50px;"  src="myImage01.jpg">
+<img id="myImg02" style="position:absolute; width:100px; height:80px; top:0px; left:250px;" src="myImage02.jpg">
 
-<body  onKeyDown="{
-     let myAlphaKey = event.key
-     document.getElementById('myDiv01').innerHTML = 'You typed: ' + myAlphaKey.toLowerCase()
-      if (myAlphaKey.toLowerCase() == 'arrowright') {
-         document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 10
-         myCheckAll()
-     }
-      if (myAlphaKey.toLowerCase() == 'w') {   // go up
-         document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) - 30
-         myCheckAll()
-      }
-      if (myAlphaKey.toLowerCase() == 'a') {   // go left
-         document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) - 30
-         myCheckAll()
-      }
-      if (myAlphaKey.toLowerCase() == 's') {   // go down
-         document.getElementById('mySpan01').style.top = parseInt(document.getElementById('mySpan01').style.top) + 30
-         myCheckAll()
-      }
-      if (myAlphaKey.toLowerCase() == 'd') {   // go right
-         document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 30
-         myCheckAll()
-      }
+<input type=button value="Auto Background Left" onclick="{
+  clearInterval(myClock)
+  let myTemp = '100px 0px'
+  myClock = setInterval(function(){
+      myGlobalX -= 5
+      myTemp =  myGlobalX + 'px 0px'
+      document.getElementById('myBody').style.backgroundPosition = myTemp
+  }, 100)
+    
 }">
 
 
-
-
-<h1 align=center style="color:yellow;">Game Template Wepage</h1>
-   
-   
-<div id="myDiv01">...</div>
-<span id="mySpanBackground" style="z-index:-1; position:absolute; left:0; top:0; width:3000; height:2000"> 
- <img src="space21.jpg" width=4000> </span><br>
-<input type=button value="Move 10 pixels right" onClick="{
-   //alert( parseInt(document.getElementById('mySpan01').style.left) ) 
-                          
-document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + document.myXpixels
-if(myHitOther('mySpan01', 'mySpan02')){
-   document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) - document.myXpixels
-}
-                        
-}">
-document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + document.myXpixels
-if(myHitOther('mySpan01', 'mySpan02')){
-   document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) - document.myXpixels
-}
-                        
-}">
-
-<span id="mySpan01" style="position:absolute; left:100; top:150; width:45; height:30"> 
-    span 1</span><br>
-<span id="mySpan02" style="position:absolute; left:200; top:150; width:45; height:30"> 
-    span 2</span><br>
+<input type=button value="Image Right Fast Button" onTouchStart="{this.click(); event.preventDefault();}" onclick="{
+  document.getElementById('myImg01').style.left = parseInt(document.getElementById('myImg01').style.left) + 10 + 'px'
+  myCheckHit()     // checks for all collisions
+}"><br><br>
